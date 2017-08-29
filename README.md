@@ -9,11 +9,17 @@ I intend to construct a forum on which the people can easily establish connectio
 Install MongoDB globally
 ``
 $ curl -O https://fastdl.mongodb.org/osx/mongodb-osx-x86_64-3.0.4.tgz
+
 $ mkdir -p mongodb
+
 $ cp -R -n mongodb-osx-x86_64-3.0.4/ mongodb
+
 $ brew install mongodb
+
 $ mkdir -p /data/db
+
 $ mongod --dbpath /data/db
+
 $ chmod 777 /data/db
 ``
 
