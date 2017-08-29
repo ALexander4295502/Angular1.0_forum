@@ -1,0 +1,107 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.thumbnail {
+    padding:0px;
+}
+.panel {
+    position:relative;
+}
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+    position:absolute;
+    top:11px;left:-16px;
+    right:100%;
+    width:0;
+    height:0;
+    display:block;
+    content:" ";
+    border-color:transparent;
+    border-style:solid solid outset;
+    pointer-events:none;
+}
+.panel-heading span:nth-last-child(2){
+    position: absolute;
+    right: 30px;   /* must be equal to parent's right padding */
+    top: 10px;
+}
+
+.panel-heading span:last-child{
+    position: absolute;
+    right: 10px;   /* must be equal to parent's right padding */
+    top: 10px;
+}
+
+.comment-post-head span:last-child{
+    position: absolute;
+    left: 500px;   /* must be equal to parent's right padding */
+    top: 10px;
+}
+
+.panel>.panel-heading:after{
+    border-width:7px;
+    border-right-color:#f7f7f7;
+    margin-top:1px;
+    margin-left:2px;
+}
+.panel>.panel-heading:before{
+    border-right-color:#ddd;
+    border-width:8px;
+}
+
+input.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+#profile-image1 {
+    cursor: pointer;
+
+    width: 100px;
+    height: 100px;
+    border:2px solid #03b1ce ;}
+.tital{ font-size:16px; font-weight:500;}
+.bot-border{ border-bottom:1px #f8f8f8 solid;  margin:5px 0  5px 0}
+
+#custom-search-form {
+    margin:0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+#custom-search-form .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#custom-search-form button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.search-query:focus + button {
+    z-index: 3;
+}
